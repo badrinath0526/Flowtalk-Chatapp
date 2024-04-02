@@ -15,7 +15,7 @@ export const SocketContextProvider=({children})=>{
 
     useEffect(()=>{
         if(authUser){
-            const socket=io ("http://localhost:3010",{
+            const socket=io ("https://flowtalk-bt5b.onrender.com",{
                 query:{
                     userId:authUser._id,
                 },
